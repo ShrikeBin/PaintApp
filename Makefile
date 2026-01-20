@@ -1,11 +1,11 @@
 all: build run
 
 build:
-	javac --module-path ../javaFX/lib --add-modules javafx.controls PaintApp.java
+	javac --module-path ./lib --add-modules javafx.controls App/*.java
 
 run:
-	java --module-path ../javaFX/lib --add-modules javafx.controls PaintApp
+	java --module-path ./lib --add-modules javafx.controls -cp ./App PaintApp
 
 clean:
-	rm -rf *.class
-	rm log.txt
+	rm -rf App/*.class
+	rm -f log.txt
