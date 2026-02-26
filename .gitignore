@@ -1,2 +1,4 @@
 /lib
 /DOCS_HTML
+/App/*.class
+log.txt
